@@ -23,9 +23,9 @@ const MainComponent = () => {
 
     return (
         <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Home" component={Home} />
             {isLoggedIn ? (
                 <>
-                    <Stack.Screen name="Home" component={Home} />
                     <Stack.Screen name="Jokes" component={Jokes} />
                     <Stack.Screen name="ComicBot" component={ComicBot} />
                 </>
@@ -38,5 +38,6 @@ const MainComponent = () => {
         </Stack.Navigator>
     );
 };
+
 
 export default MainComponent;

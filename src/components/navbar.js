@@ -56,9 +56,15 @@ const Navbar = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     navbar: {
-        backgroundColor: 'black',
+        backgroundColor: 'white',
         borderRadius: 15,
         padding: 10,
+        margin: 5,
+        shadowColor: '#FFA07A',
+        shadowOffset: { width: 2, height: 2 },
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
+        elevation: 5,
     },
     buttonContainer: {
         flexDirection: 'row',
@@ -69,16 +75,18 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
     },
     menuText: {
-        color: 'white',
-        fontSize: 16,
+        color: 'black',
+        fontSize: 22,
     },
     linkContainer: {
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
+        alignItems: 'center',
         flexWrap: 'wrap',
+
     },
     link: {
-        color: 'white',
+        color: 'black',
         marginHorizontal: 10,
         fontSize: 16,
     },
